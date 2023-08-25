@@ -7,15 +7,15 @@
   <link rel="stylesheet" href="./style/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Document</title>
 </head>
 
 <body>
-
-  <div class="container-fluid ">
-    <nav class="navbar navbar-expand-lg bg-info fixed-top">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-black fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand text-center" href="#">HerazoFullStack</a>
+        <a class="navbar-brand text-center text-light" href="#">Marvel Studios</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -23,19 +23,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link active text-light" aria-current="page" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">¿Proyectos?</a>
+              <a class="nav-link text-light" href="#">Peliculas</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                Dropdown
+                Cronología
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Boostrap</a></li>
-                <li><a class="dropdown-item" href="#">FrontEnd</a></li>
+                <li><a class="dropdown-item" href="#">Saga del Infinito</a></li>
+                <li><a class="dropdown-item" href="#">Post-Saga del infinito</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
@@ -43,12 +43,12 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">¿Quien Soy?</a>
+              <a class=" btn btn-outline-light" aria-current="page" href="#">Noticias</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-light" type="submit">Search</button>
+            <button class="btn btn-outline-danger" type="submit">Search</button>
           </form>
         </div>
       </div>
@@ -67,22 +67,22 @@
       <div class="carousel-item active">
         <img src="./img/imagen_1.png" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Mi nombre es Carlos</h5>
-          <p>Desarrollador FrontEnd y BackEnd en progreso</p>
+          <h5>MCU</h5>
+          <p>Un mundo fuera de lo común</p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="./img/imagen_2.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Programador en desarrollo</h5>
-          <p>Paginas Web aplicando buenas practicas</p>
+          <h5>Personajes</h5>
+          <p>Villamos, SuperHeroes y Antagonistas</p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="./img/imagen_3.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Diseños Responsives</h5>
-          <p>Excelentes diseños adaptados a dispositivos de distintos</p>
+          <h5>Historias que Emocionan</h5>
+          <p>Te dejaran caitivado de principio a fin</p>
         </div>
       </div>
     </div>
@@ -96,47 +96,393 @@
     </button>
   </div>
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="contenido-imagen">
-          <img src="./img/imagen_2.jpg" alt="">
+    <div class="container-fluid">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div data-aos="fade-left" class="col-lg-4">
+          <div class="contenido-imagen">
+            <img src="./img/scarlet_johansson.jpg" alt="">
+          </div>
+          <h2 class="fw-normal">Scarlett Johansson</h2>
+          <p>El primer papel de Scarlett Johansson como Black Widow fue en la película "Iron Man 2" lanzada en 2010.
+            Desde
+            entonces, ha interpretado a este personaje en varias películas del MCU.</p>
+          <p><a class="btn btn-outline-danger" href="#">Ver detalles &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div data-aos="zoom-in" class="col-lg-4">
+          <div class="contenido-imagen">
+            <img src="./img/brie_larson.jpg" alt="">
+          </div>
+
+          <h2 class="fw-normal">Brie Larson</h2>
+          <p>Brie Larson debutó como Captain Marvel en la película del mismo nombre, "Captain Marvel", lanzada en 2019.
+            Su
+            personaje es una superheroína con poderes cósmicos y se convierte en una figura clave en la narrativa
+            general
+            del MCU.
+          </p>
+          <p><a class="btn btn-outline-danger" href="#">Ver detalles &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div data-aos="fade-left" class="col-lg-4">
+          <div class="contenido-imagen">
+            <img src="./img/elizabeth-olsen.webp" alt="">
+          </div>
+          <h2 class="fw-normal">Elizabeth Olsen</h2>
+          <p>Su personaje es conocido por su vínculo con la magia y el poder, lo que lo convierte en un elemento
+            importante dentro del universo de Marvel.Elizabeth Olsen debutó como Scarlet Witch en la película "Avengers:
+            Age of Ultron" lanzada en 2015. Desde entonces, ha aparecido en varias películas del MCU.</p>
+          <p><a class="btn btn-outline-danger" href="#">Ver detalles &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+    <main>
+      <section data-aos="zoom-in" class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Peliculas más vistas</h1>
+            <p class="lead text-body-secondary">A lo largo del tiempo, he tenido la oportunidad de disfrutar de una
+              serie
+              de películas increíbles dentro del universo cinematográfico de Marvel. Desde las emocionantes batallas en
+              "Avengers: Endgame" hasta la exploración cósmica en "Guardians of the Galaxy", estas películas han dejado
+              una marca profunda en mi pasión por los superhéroes en la pantalla grande.</p>
+
+          </div>
         </div>
+      </section>
 
-        <div class="col">
-          <p class="text-center">Custom column padding</p>
+      <div class="album py-2 bg-body-tertiary">
+        <div class="container-md">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+            <div class="col">
+              <div data-aos="fade-left" class="card shadow-sm">
+                <div class="bd-placeholder-img card-img-top fs-6 text-center" width="100%" height="225" role="img"
+                  aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                    dy=".3em">Capitana Marvel</text>
+                  <img class="peliculas" src="./peliculas_img/capitana-marvel.webp" alt="">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">La película explora la búsqueda de identidad de Carol Danvers y su conexión con
+                    su
+                    pasado terrestre, mientras se enfrenta a desafíos tanto en la Tierra como en el espacio. "Captain
+                    Marvel" destaca por su enfoque en el empoderamiento femenino y por presentar a una protagonista
+                    femenina fuerte y decidida. </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-outline-danger">Ver</button>
+                      <button type="button" class="btn btn btn-outline-info">Reseñas</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col ">
+              <div data-aos="zoom-in" class="card shadow-sm">
+                <div class="bd-placeholder-img card-img-top fs-6 text-center" width="100%" height="225" role="img"
+                  aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                    dy=".3em">Guardianes de la Galaxia</text>
+                  <img class="peliculas" src="./peliculas_img/Guardians-of-the-Galaxy.png" alt="">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">En la última película de los Guardianes de la Galaxia, la banda se encuentra en
+                    Knowhere cuando el pasado turbulento de Rocket comienza a afectar sus vidas. Peter Quill lidera al
+                    equipo en una peligrosa misión para salvar a Rocket y evitar el posible fin de los Guardianes. </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-outline-danger">Ver</button>
+                      <button type="button" class="btn btn btn-outline-info">Reseñas</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div data-aos="fade-right" class="card shadow-sm">
+                <div class="bd-placeholder-img card-img-top fs-6 text-center" width="100%" height="225" role="img"
+                  aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Ant
+                    Man
+                    Quantumania</text>
+                  <img class="peliculas" src="./peliculas_img/ant-man_quantumania.jpg" alt="">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Los superhéroes Scott Lang y Hope Van Dyne regresan para continuar sus aventuras
+                    como Hombre hormiga y Avispa. Con los padres de Hope, Hank Pym y Janet Van Dyne, y con la hija de
+                    Scott, Cassie Lang, la familia explora el Reino Quántico, interactúa con extrañas criaturas y se
+                    embarca en una aventura que los hará ir más allá de lo que creían posible.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-outline-danger">Ver</button>
+                      <button type="button" class="btn btn btn-outline-info">Reseñas</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div data-aos="zoom-in-right" class="card shadow-sm">
+                <div class="bd-placeholder-img card-img-top fs-6 text-center" width="100%" height="225" role="img"
+                  aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                    dy=".3em">Avangers Endgame</text>
+                  <img class="peliculas" src="./peliculas_img/avangers_endgame.jpg" alt="">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">En el final épico de la Saga del Infinito, los Avengers se enfrentan a Thanos.
+                    Cuando eventos devastadores arrasan con la mitad de la población mundial y fracturan sus filas, los
+                    héroes restantes luchan por avanzar. Pero deben unirse para restaurar el orden y la armonía en el
+                    universo y traer de vuelta a sus seres queridos.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-outline-danger">Ver</button>
+                      <button type="button" class="btn btn btn-outline-info">Reseñas</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col  ">
+              <div data-aos="zoom-in-right" class="card shadow-sm">
+                <div class="bd-placeholder-img card-img-top fs-6 text-center" width="100%" height="225" role="img"
+                  aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                    dy=".3em">Eternals</text>
+                  <img class="peliculas" src="./peliculas_img/eternals.png" alt="">
+                </div>
+                <div class="card-body">
+                  <p class="card-text"> ETERNALS de Marvel Studios presenta un nuevo e increíble equipo de Súper Héroes
+                    del Universo Cinematográfico de Marvel: una raza inmortal de héroes de elite que han vivido en
+                    secreto
+                    en la Tierra durante años para proteger y formar a las civilizaciones. Tras los eventos de AVENGERS:
+                    ENDGAME, una tragedia inesperada los obliga a salir de las sombras para reunirse y enfrentarse al
+                    enemigo más antiguo del hombre: los Deviants. </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-outline-danger">Ver</button>
+                      <button type="button" class="btn btn btn-outline-info">Reseñas</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div data-aos="fade-up-right" class="card shadow-sm text-center">
+                <div class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
+                  aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                    dy=".3em">Infinity War</text>
+                  <img class="peliculas" src="./peliculas_img/infinity_war.webp" alt="">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Llega la batalla más sangrienta de todos los tiempos. Los Avengers y sus aliados
+                    superhéroes deben arriesgarlo todo para poder derrotar al poderoso Thanos, antes de que su bombardeo
+                    de destrucción y ruina termine con el universo. Algunas secuencias o patrones de luces intermitentes
+                    pueden afectar a espectadores fotosensibles.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-outline-danger">Ver</button>
+                      <button type="button" class="btn btn btn-outline-info">Reseñas</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col ">
+              <div data-aos="slide-down" class="card shadow-sm">
+                <div class="bd-placeholder-img card-img-top fs-6 text-center" width="100%" height="225" role="img"
+                  aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                    dy=".3em">Shangchi</text>
+                  <img class="peliculas" src="./peliculas_img/shangchi.webp" alt="">
+                </div>
+                <div class="card-body">
+                  <p class="card-text"> Shang-Chi y la Leyenda de los Diez Anillos de Marvel Studios está protagonizada
+                    por Simu Liu como Shang-Chi, quien debe enfrentarse al pasado que creía haber dejado atrás cuando se
+                    ve envuelto en la red de la misteriosa organización de los Diez Anillos. La película también está
+                    protagonizada por Tony Leung como Wenwu, Awkwafina como Katy, la amiga de Shang-Chi, y Michelle Yeoh
+                    como Jiang Nan, así como Fala Chen, Meng’er Zhang, Florian Munteanu y Ronny Chieng. Estreno Disney+
+                    Day. Película exclusiva. 12 de noviembre. </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-outline-danger">Ver</button>
+                      <button type="button" class="btn btn btn-outline-info">Reseñas</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div data-aos="zoom-in-up" class="card shadow-sm">
+                <div class="bd-placeholder-img card-img-top fs-6 text-center" width="100%" height="225" role="img"
+                  aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
+                    dy=".3em">Spaiderman Lejos de Casa</text>
+                  <img class="peliculas" src="./peliculas_img/spaiderman.jpg" alt="">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Peter Parker regresa en Spider-Man: Far From Home. Nuestro simpático superhéroe
+                    de
+                    barrio decide unirse a sus mejores amigos Ned, MJ y el resto de la pandilla en unas vacaciones
+                    europeas. Sin embargo, el plan de Peter de dejar atrás los superhéroes durante unas semanas se ve
+                    rápidamente desechado cuando acepta a regañadientes ayudar a Nick Fury a descubrir el misterio de
+                    varios ataques de criaturas elementales. Pero no todo es lo que parece.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-outline-danger">Ver</button>
+                      <button type="button" class="btn btn btn-outline-info">Reseñas</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div data-aos="fade-right" class="card shadow-sm">
+                <div class="bd-placeholder-img card-img-top fs-6 text-center" width="100%" height="225" role="img"
+                  aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="#55595c" /><text>Thor Amor y Trueno</text>
+                  <img class="peliculas" src="./peliculas_img/thor_amor_y_trueno.jpg" alt="">
+                </div>
+                <div class="card-body">
+                  <p class="card-text">En “Thor: Amor y trueno” de Marvel Studios, el dios del trueno une fuerzas con la
+                    rey valquiria, con Korg y con su exnovia Jane Foster, la ahora poderosa Thor, para enfrentar al
+                    asesino conocido como Gorr, el carnicero de dioses.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-outline-danger">Ver</button>
+                      <button type="button" class="btn btn btn-outline-info">Reseñas</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
-
-
       </div>
-      <div class="col-md-4">
-        <div class="contenido-imagen">
-          <img src="./img/imagen_2.jpg" alt="">
-        </div>
-        <div class="col">
-          <p class="text-center">Custom column padding</p>
-        </div>
+    </main>
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div data-aos="fade-right" class="col-md">
+        <h2 class="featurette-heading fw-normal lh-1">Stan Lee, <span class="text-body-secondary"> arquitecto del
+            Universo Marvel</span></h2>
+        <p class="lead">El artista, creador de personajes icónicos de Marvel, es considerado uno de los mayores nombres
+          del cómic mundial. Spider-Man, Iron Man, Hulk, Thor, Doctor Strange... Además de ser grandes éxitos de los
+          cómics del Universo Marvel, todos estos súper héroes tienen algo más en común: Stan Lee</p>
+        <p class="lead">El 12 de noviembre de 2018, la brillante mente de Stan Lee enmudeció. Sin embargo, su voz aún
+          resuena en su arte, en los personajes de los cómics, en todo el Universo Cinematográfico de Marvel (UCM),
+          inspirando a múltiples generaciones de fans.</p>
       </div>
 
-      <div class="col-md-4">
-        <div class="contenido-imagen">
-          <img src="./img/imagen_2.jpg" alt="">
-        </div>
-        <div class="col">
-          <p class="text-center">Custom column padding</p>
+      <div class="col-md">
+        <div data-aos="fade-left" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+          width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice"
+          focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" /><text x="50%" y="50%"
+            fill="var(--bs-secondary-color)" dy=".3em"></text>
+          <img class="peliculas" src="./peliculas_img/StanLee.webp" alt="">
         </div>
       </div>
-     
+    </div>
+    <hr class="featurette-divider">
+  </div>
+  
+<div class="container-fluid bg-black text-light ">
+  <footer class="py-5">
+    <div class="row text-center">
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2 "><a href="#" class="nav-link p-0 text-light">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5>Subscribe to our newsletter</h5>
+          <p>Monthly digest of what's new and exciting from us.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-outline-info" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
     </div>
 
-  </div>
-
-  </div>
-  </div>
-
+    <div class="d-flex align-items-center justify-content-center text-center">
+      <p>&copy; 2023 HerazoFullStacks</p>
+    </div>
+  </footer>
+</div>
+  
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      easing: 'ease-out-back',
+      duration: 1000
+    });
+  </script>
 </body>
 
 </html>
